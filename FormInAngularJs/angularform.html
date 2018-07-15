@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angular Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="angular.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div ng-app="">
+        <div class="col-sm-6">
+            <h1>Input</h1>
+        </div>
+        <div class="col-sm-6">
+            <h1>Output</h1>
+        </div>
+        <div class="col-sm-6">
+        <form class="form-horizontal">
+
+                <label class="col-sm-3 control-label"> Name:</label>
+
+                <div class="col-sm-9">
+                    <input type="text" ng-model="name" class="form-control">
+                </div>
+                <br>
+
+                <label class="col-sm-3 control-label"> Father name:</label>
+                <div class="col-sm-9">
+                    <input type="text" ng-model="fathername" class="form-control">
+                </div>
+                <br>
+                <label class="col-sm-3 control-label"> NIC:</label>
+                <div class="col-sm-9">
+                    <input type="text" ng-model="nic" class="form-control">
+                </div>
+                <br>
+                <label class="col-sm-3 control-label">Mobile:</label>
+                <div class="col-sm-9">
+                    <input type="text" ng-model="mobile" class="form-control">
+                </div>
+                <br>
+                <label class="col-sm-3 control-label"> Email:</label>
+
+
+                <div class="col-sm-9">
+                    <input type="text" ng-model="email" class="form-control">
+                </div>
+                <br>
+                <label class="col-sm-3 control-label"> Address:</label>
+
+
+                <div class="col-sm-3">
+                    <textarea ng-model="address" cols="30" rows="3" class="form-control"></textarea>
+                </div>
+                <br>
+            </form>
+        </div>
+        <div class="col-sm-6">
+
+            <ol class="list-group">
+                <li class="list-group-item active"> Name:
+                    <span ng-bind="name"></span>
+                </li>
+                <li class="list-group-item">Father name:
+                    <span ng-bind="fathername"></span>
+                </li>
+                <li class="list-group-item">NIC:
+                    <span ng-bind="nic"></span>
+                </li>
+                <li class="list-group-item">Email:
+                    <span ng-bind="email"></span>
+                </li>
+                <li class="list-group-item">Address:
+                    <span ng-bind="address"></span>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
